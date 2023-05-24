@@ -24,7 +24,13 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "build": { "babel": { "include": [ "@ui-kitten/components" ] } }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6fc22352-b9d8-43d3-bb94-45e7eabcf547"
+      }
     }
   }
 }
