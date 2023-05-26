@@ -4,6 +4,8 @@ import { ApplicationProvider, Layout, Text, Card } from '@ui-kitten/components';
 import {View, Image, StyleSheet} from 'react-native';
 import { default as theme } from './custom-theme.json'; // Import app theme
 import Imagecard from './components/imagecard';
+import CustomSlider from './components/CustomSlider';
+import data from './components/data';
 
 export default function App() {
 
@@ -14,9 +16,10 @@ export default function App() {
   );
 
   return (
-    <ApplicationProvider {...eva} theme={{...eva.light, ...theme}}>
+    <ApplicationProvider {...eva} theme={{...eva.dark, ...theme}}>
       {/* <HomeScreen /> */}
-      <Imagecard />
+      {/* <Imagecard /> */}
+      <CustomSlider data={data}/>
     </ApplicationProvider>
   );
 };
